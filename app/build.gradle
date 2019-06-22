@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.talentsboard"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation "org.jetbrains.anko:anko-common:0.8.3"
+    implementation "com.android.support:support-compat:28.0.0"
+    implementation 'com.github.HITGIF:TextFieldBoxes:1.4.4' // for editText
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    api 'com.github.kittinunf.fuel:fuel:1.16.0' //for JVM
+    api 'com.github.kittinunf.fuel:fuel-android:1.16.0' //for Android
+    api 'com.github.kittinunf.fuel:fuel-livedata:1.16.0' //for LiveData support
+    api 'com.github.kittinunf.fuel:fuel-rxjava:1.16.0' //for RxJava support
+    api 'com.github.kittinunf.fuel:fuel-coroutines:1.16.0' //for Kotlin Coroutines support
+    api 'com.github.kittinunf.fuel:fuel-gson:1.16.0' //for Gson support
+    api 'com.github.kittinunf.fuel:fuel-jackson:1.16.0' //for Jackson support
+    api 'com.github.kittinunf.fuel:fuel-moshi:1.16.0' //for Moshi support
+    api 'com.github.kittinunf.fuel:fuel-forge:1.16.0' //for Forge support
+    api 'com.github.clans:fab:1.6.4'
+    implementation 'com.facebook.android:facebook-login:[5,6)'
+
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".EventsFragment"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="0dp"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  android:layout_marginStart="0dp">
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="25dp"
+                     android:visibility="gone"
+                     android:id="@+id/createEventRes">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/createEventResText"
+                      android:textAlignment="center"
+                      android:textColor="@color/colorAccent"
+                      android:background="#449d44"/>
+        </FrameLayout>
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:visibility="visible"
+                     android:layout_height="35dp">
+
+
+            <android.support.constraint.ConstraintLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="top"
+                    android:layout_height="32dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/linearLayout">
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/dancning_filter"
+                        android:id="@+id/img_dancing"
+                        android:layout_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="28dp"
+                        app:layout_constraintEnd_toStartOf="@+id/spin_dance"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_bias="0.923"/>
+                <Spinner
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/spin"
+                        android:layout_weight="1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="304dp"
+                        app:layout_constraintTop_toTopOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+        </FrameLayout>
+
+
+            <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                         android:layout_height="match_parent">
+
+
+                <ProgressBar android:layout_width="75dp"
+                             android:layout_height="75dp"
+                             android:theme="@style/Theme.AppCompat.Light"
+                             android:id="@+id/progress_bar"
+                             app:layout_constraintStart_toStartOf="@+id/event_list_view"
+                             app:layout_constraintEnd_toEndOf="@+id/event_list_view"
+                             app:layout_constraintHorizontal_bias="0.511"
+                             android:layout_marginTop="236dp"
+                             app:layout_constraintTop_toTopOf="@+id/event_list_view"/>
+
+
+                <ListView android:layout_width="380dp"
+                          android:layout_height="497dp"
+                          android:layout_marginBottom="80dp"
+                          app:layout_constraintBottom_toBottomOf="parent"
+                          android:id="@+id/event_list_view"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          android:layout_marginEnd="8dp"
+                          app:layout_constraintStart_toStartOf="parent"
+                          android:layout_marginStart="8dp"
+                          app:layout_constraintTop_toTopOf="parent"
+                          app:layout_constraintHorizontal_bias="0.272"
+                          app:layout_constraintVertical_bias="0.078">
+                </ListView>
+
+                <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="576dp"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/event"
+                        android:layout_margin="20dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/event_list_view"
+                        android:layout_marginEnd="28dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="@+id/event_list_view"
+                        app:layout_constraintVertical_bias="0.944"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        android:background="@color/colorPrimaryDark" app:backgroundTint="@color/colorPrimary"
+                        android:id="@+id/fab"/>
+            </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
