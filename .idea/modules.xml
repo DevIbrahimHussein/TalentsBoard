@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Talentsboard.iml" filepath="$PROJECT_DIR$/Talentsboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-applinks/facebook-applinks.iml" filepath="$PROJECT_DIR$/facebook-applinks/facebook-applinks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-common/facebook-common.iml" filepath="$PROJECT_DIR$/facebook-common/facebook-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-core/facebook-core.iml" filepath="$PROJECT_DIR$/facebook-core/facebook-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-login/facebook-login.iml" filepath="$PROJECT_DIR$/facebook-login/facebook-login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-marketing/facebook-marketing.iml" filepath="$PROJECT_DIR$/facebook-marketing/facebook-marketing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-messenger/facebook-messenger.iml" filepath="$PROJECT_DIR$/facebook-messenger/facebook-messenger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-places/facebook-places.iml" filepath="$PROJECT_DIR$/facebook-places/facebook-places.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook-share/facebook-share.iml" filepath="$PROJECT_DIR$/facebook-share/facebook-share.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".userprofileFragment" android:id="@+id/frameLayout5">
+    <ImageView
+            android:src="@drawable/no_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/user_image" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:id="@+id/followers" android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/profile_save"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.185"/>
+    <ImageView
+            android:src="@drawable/followers"
+            android:layout_width="23dp"
+            android:layout_height="18dp"
+            android:id="@+id/imageView4" android:layout_marginTop="96dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.435" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_profile"
+            app:layout_constraintVertical_bias="0.993"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="81dp"
+            android:layout_height="35dp"
+            android:id="@+id/followings" android:layout_marginTop="80dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/edit_profile"
+            app:layout_constraintVertical_bias="0.992" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:textAlignment="textEnd"/>
+    <ImageView
+            android:src="@drawable/followings"
+            android:layout_width="23dp"
+            android:layout_height="18dp"
+            android:id="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="96dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.811"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/profile_save"
+            app:layout_constraintVertical_bias="1.0"/>
+
+
+    <Button
+            android:text="Follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/follow" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="132dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="User Info:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/follow"
+            app:layout_constraintHorizontal_bias="0.023"/>
+    <ListView
+            android:layout_width="391dp"
+            android:layout_height="170dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="228dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/info_list"/>
+    <TextView
+            android:text="User videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_video"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintTop_toBottomOf="@+id/info_list"/>
+    <ImageView
+            android:src="@drawable/my_videos"
+            android:layout_width="54dp"
+            android:layout_height="29dp"
+            android:id="@+id/imageView11" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.278"
+            app:layout_constraintTop_toBottomOf="@+id/info_list"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.327" android:textStyle="bold" android:textAlignment="viewStart"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/country" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.282" android:layout_marginTop="48dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+            android:src="@drawable/bell"
+            android:layout_width="25dp"
+            android:layout_height="32dp"
+            android:id="@+id/bell" android:layout_marginTop="140dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/follow"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.545"/>
+</android.support.constraint.ConstraintLayout>

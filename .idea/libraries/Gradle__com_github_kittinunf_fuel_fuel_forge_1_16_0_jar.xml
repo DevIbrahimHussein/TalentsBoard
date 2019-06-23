@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.kittinunf.fuel:fuel-forge:1.16.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kittinunf.fuel/fuel-forge/1.16.0/27a0d2f85bdf660741ec1f3baffb934d9715035f/fuel-forge-1.16.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kittinunf.fuel/fuel-forge/1.16.0/a6dacfae7a86cb82d58189c8a2fd429956d68d12/fuel-forge-1.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

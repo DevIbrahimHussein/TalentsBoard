@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/Comment_name"
+            android:background="@drawable/commentscorners"
+            android:textColor="@color/Black"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="40dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="40dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:paddingLeft="10dp" android:paddingTop="16dp" android:paddingBottom="10dp"/>
+    <TextView
+            android:text="21/4/2009"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21" app:layout_constraintEnd_toEndOf="@+id/Comment_name"
+            app:layout_constraintStart_toStartOf="@+id/Comment_name" app:layout_constraintHorizontal_bias="0.955"
+            android:textSize="12sp" android:padding="2dp" app:layout_constraintTop_toTopOf="@+id/Comment_name"/>
+    <!--<TextView-->
+            <!--android:text="27/5/2006"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView20" app:layout_constraintStart_toStartOf="parent"-->
+            <!--android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp"-->
+            <!--app:layout_constraintHorizontal_bias="0.881" android:layout_marginTop="48dp"-->
+            <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+</android.support.constraint.ConstraintLayout>
